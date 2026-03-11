@@ -100,6 +100,17 @@ tbody tr.highlight td{color:var(--rd);font-weight:600;background:rgba(196,52,45,
 /* ── Superscripts / footnotes ── */
 sup.fn{font-family:var(--mono);font-size:9px;color:var(--rd);margin-left:1px;font-weight:500;cursor:default;vertical-align:super;line-height:0}
 
+/* ── Byline ── */
+.byline{margin-top:28px;padding-top:20px;border-top:1px solid var(--bl)}
+.byline-name{font-family:var(--mono);font-size:13px;font-weight:500;color:var(--dk);letter-spacing:0.3px}
+.byline-name a{color:var(--dk);border-bottom:none}
+.byline-name a:hover{color:var(--rd)}
+.byline-detail{font-size:13px;color:var(--ft);margin-top:4px;line-height:1.7}
+.byline-links{display:flex;gap:14px;margin-top:14px;align-items:center}
+.byline-links a{display:flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:50%;border:1px solid var(--bd);color:var(--ft);transition:all .2s;text-decoration:none}
+.byline-links a:hover{border-color:var(--rd);color:var(--rd);background:rgba(196,52,45,.04)}
+.byline-links a svg{width:15px;height:15px;fill:currentColor}
+
 /* ── Footer ── */
 footer{padding:48px 0;text-align:center;font-family:var(--mono);font-size:10px;color:var(--vf);letter-spacing:1px}
 
@@ -119,6 +130,16 @@ footer{padding:48px 0;text-align:center;font-family:var(--mono);font-size:10px;c
 <header>
   <h1>Classic Alignment-Faking Evaluations<br>Measure Jailbreak Detection,<br>Not Scheming</h1>
   <p class="lead"><strong>Main Finding:</strong> When you provide classic alignment-faking evaluation prompts to Claude 4.5 Haiku, you see robust non-compliance mediated by jailbreak detection. When you strip adversarial cues from these prompts, Haiku's compliance increases dramatically and shifts from jailbreak refusal to value-based reasoning.</p>
+  <div class="byline">
+    <div class="byline-name"><a href="https://alexeigannon.com/">Alexei Gannon</a></div>
+    <div class="byline-detail">PhD Student, Neuroscience · New York City</div>
+    <div class="byline-links">
+      <a href="mailto:alexanderjosephgannon@gmail.com" title="Email"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></a>
+      <a href="https://x.com/alexeigannon" title="X"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+      <a href="https://bsky.app/profile/alexeigannon.bsky.social" title="Bluesky"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.236 2.636 7.855 6.356 9.312-.088-.791-.167-2.005.035-2.868.182-.78 1.172-4.97 1.172-4.97s-.299-.598-.299-1.482c0-1.388.806-2.425 1.808-2.425.853 0 1.265.64 1.265 1.408 0 .858-.546 2.14-.828 3.33-.236.995.499 1.806 1.48 1.806 1.778 0 3.144-1.874 3.144-4.58 0-2.393-1.72-4.068-4.177-4.068-2.845 0-4.515 2.134-4.515 4.34 0 .859.331 1.781.745 2.282a.3.3 0 01.069.288c-.076.316-.245.995-.278 1.134-.044.183-.145.222-.335.134-1.249-.581-2.03-2.407-2.03-3.874 0-3.154 2.292-6.052 6.608-6.052 3.469 0 6.165 2.473 6.165 5.776 0 3.447-2.173 6.22-5.19 6.22-1.013 0-1.965-.527-2.291-1.148l-.623 2.378c-.226.869-.835 1.958-1.244 2.621.937.29 1.931.446 2.962.446 5.523 0 10-4.477 10-10S17.523 2 12 2z"/></svg></a>
+      <a href="https://www.linkedin.com/in/alexander-gannon-66571b226/" title="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14m-.5 15.5v-5.3a3.26 3.26 0 00-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 011.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 001.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 00-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg></a>
+    </div>
+  </div>
 </header>
 
 <!-- ═══════════════════════════════════════════════════ -->
